@@ -1,0 +1,204 @@
+.main-banner {
+  background: $color-white;
+  position: relative;
+  &__illustration {
+    width: 1920px;
+    height: 501px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    top: 70px;
+    background: url(../images/bg-main-banner.jpg) center center no-repeat;
+  }
+  &__character {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    &_1 {
+      width: 90px;
+      height: 307px;
+    }
+    &_2 {
+      width: 171px;
+      height: 497px;
+    }
+    &_3 {
+      width: 157px;
+      height: 391px;
+      display: none;
+      @media screen and (min-width: 1600px) {
+        display: block;
+      }
+    }
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include transition;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      opacity: 0;
+    }
+    &:hover:before {
+      opacity: 0;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
+    &_1 {
+      top: 120px;
+      left: 490px;
+      &:before,
+      &:after {
+        background: url(../images/sprite-wooman-1.png) left top no-repeat;
+      }
+      &:after {
+        background-position: right top;
+      }
+    }
+    &_2 {
+      top: 43px;
+      right: 485px;
+      @media screen and (min-width: 1200px) {
+        right: 400px;
+      }
+      @media screen and (min-width: 1600px) {
+        right: 495px;
+      }
+      &:before,
+      &:after {
+        background: url(../images/sprite-wooman-2.png) left top no-repeat;
+      }
+      &:after {
+        background-position: right top;
+      }
+    }
+    &_3 {
+      top: 103px;
+      right: 322px;
+      &:before,
+      &:after {
+        background: url(../images/sprite-wooman-3.png) left top no-repeat;
+      }
+      &:after {
+        background-position: right top;
+      }
+    }
+  }
+  &__cloud {
+    display: block;
+    width: 168px;
+    height: 76px;
+    position: absolute;
+  }
+  &__character_1 &__cloud {
+    top: -75px;
+    right: -140px;
+    @media screen and (min-width: 1360px) {
+      right: auto;
+      left: -166px;
+      top: -47px;
+    }
+  }
+  &__character_2 &__cloud {
+    top: -45px;
+    left: -130px;
+    @media screen and (min-width: 1600px) {
+      right: -145px;
+      left: auto
+    }
+  }
+  &__character_3 &__cloud {
+    top: -26px;
+    right: -141px;
+  }
+  &__cloud-bg {
+    width: 168px;
+    height: 76px;
+    fill: $color-white;
+    stroke: #A6A6A6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @include transition;
+  }
+  &__character:hover &__cloud-bg {
+    fill: #E6E6E6;
+    stroke: #E6E6E6;
+  }
+  &__character_1 &__cloud-bg {
+    transform: scale(-1, 1);
+    @media screen and (min-width: 1360px) {
+      transform: none;
+    }
+  }
+  &__character_2 &__cloud-bg,
+  &__character_3 &__cloud-bg {
+    @media screen and (min-width: 1600px) {
+      transform: scale(-1, 1);
+    }
+  }
+  &__cloud-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font: $bold 12px / 18px 'Segoe Print', sans-serif;
+    color: $color-dark;
+    justify-content: center;
+  }
+  &__cover {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 261px;
+  }
+  &__info {
+    text-align: center;
+    max-width: 550px;
+  }
+  &__title {
+    color: #FE4C36;
+    text-transform: uppercase;
+    font: $regular 37px / 50px 'Posterizer KG Sketch', sans-serif;
+    margin: 0;
+    position: relative;
+    z-index: 11;
+    span {
+      font-size: 65px;
+      line-height: 70px;
+      display: block;
+      letter-spacing: 6.5px;
+    }
+  }
+  &__button {
+    display: inline-block;
+    background: $color-green;
+    color: $color-white;
+    font-size: 13px;
+    line-height: normal;
+    font-weight: $extrabold;
+    padding: 16.5px 40px;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 33px;
+    position: relative;
+    z-index: 11;
+    &:hover,
+    &:active {
+      text-decoration: none;
+      background: $color-orange;
+    }
+  }
+}

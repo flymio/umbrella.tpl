@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  &__content {
+    flex: 1 0 auto;
+  }
+  &__footer {
+    flex: 0 0 auto;
+  }
+}

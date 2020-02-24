@@ -1,0 +1,32 @@
+.nav {
+  &__list {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0 -40px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      margin-right: -70px;
+    }
+  }
+  &__item {
+    padding: 2px 40px 2px 0;
+    @media screen and (min-width: 1200px) {
+      padding-right: 70px;
+    }
+  }
+  &__link {
+    color: $color-brown;
+    font-weight: $extrabold;
+    letter-spacing: 0.7px;
+    &:hover,
+    &:active,
+    .active > & {
+      color: #979797;
+      text-decoration: none;
+    }
+  }
+}

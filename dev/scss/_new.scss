@@ -1,0 +1,42 @@
+.new {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0 0 auto;
+  &__name {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: $regular;
+    text-transform: none;
+    letter-spacing: 1.4px;
+    display: block;
+    flex: 1 0 auto;
+    span {
+      color: $color-blue;
+    }
+  }
+  &__name-link {
+    color: $color-dark;
+    display: block;
+    &:hover,
+    &:active {
+      color: $color-blue;
+      text-decoration: none;
+    }
+  }
+  &__date {
+    flex: 0 0 auto;
+    color: #6C6C6C;
+    margin-top: 13px;
+    position: relative;
+    padding-left: 23px;
+  }
+  &__icon-date {
+    display: block;
+    line-height: 14px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}

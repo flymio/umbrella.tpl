@@ -1,0 +1,97 @@
+.form {
+  padding-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: $extrabold;
+    margin: 0 0 20px;
+  }
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      margin: 0 -15px;
+    }
+  }
+  &__column {
+    width: 100%;
+    flex: 0 0 auto;
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+  &__string {
+    margin-bottom: 10px;
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background: $color-white;
+    font: $regular 12px $font;
+    color: $color-dark;
+    outline: none;
+    letter-spacing: 0;
+  }
+  &__input {
+    height: 44px;
+    padding: 0 20px;
+  }
+  &__textarea {
+    height: 113px;
+    padding: 13px 20px;
+    resize: none;
+    @media screen and (min-width: 1200px) {
+      height: 152px;
+    }
+  }
+  &__footnote {
+    display: flex;
+    position: relative;
+    margin-right: -17px;
+    align-items: center;
+  }
+  &__button-block {
+    flex: 0 0 auto;
+    padding-right: 17px;
+    margin-bottom: 10px;
+  }
+  &__submit {
+    display: block;
+    width: 183px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    background: $color-orange;
+    color: $color-white;
+    text-transform: uppercase;
+    font: $extrabold 13px $font;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    @include transition;
+    letter-spacing: 0.5px;
+    padding: 0;
+    &:hover,
+    &:active {
+      background: $color-green;
+    }
+  }
+  &__email-block {
+    flex: 1 1 auto;
+    padding-right: 17px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    letter-spacing: 0.7px;
+    word-wrap: break-word;
+  }
+}

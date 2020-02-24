@@ -1,0 +1,12 @@
+@mixin font-face($name-font, $path-font, $weight-font, $style-font) {
+  @font-face {
+    font-family: $name-font;
+    src: url('#{$path-font}.woff') format('woff'),
+         url('#{$path-font}.ttf') format('truetype');
+    font-weight: $weight-font;
+    font-style: $style-font;
+  }
+}
+@mixin transition {
+  transition: all 200ms ease;
+}

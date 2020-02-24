@@ -1,0 +1,17 @@
+.values {
+  background: $color-gray;
+  &__cover {
+    padding-bottom: 58px;
+  }
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__column {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 15px;
+  }
+}

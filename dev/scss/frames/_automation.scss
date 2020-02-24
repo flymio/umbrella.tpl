@@ -1,0 +1,25 @@
+.automation {
+  overflow: hidden;
+  &__cover {
+    padding-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 33px;
+    }
+  }
+  &__img-block {
+    margin-bottom: 25px;
+    float: left;
+    margin-left: -300px;
+    width: 730px;
+    @media screen and (min-width: 1200px) {
+      margin-top: -30px;
+      width: 815px;
+    }
+  }
+  &__text {
+    margin-left: 470px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 600px;
+    }
+  }
+}

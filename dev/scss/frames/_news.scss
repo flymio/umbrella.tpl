@@ -1,0 +1,81 @@
+.news {
+  background: $color-gray;
+  &__container {
+    position: relative;
+    @media screen and (min-width: 1360px) {
+      margin: 0 -70px;
+    }
+  }
+  &__wrapper {
+    overflow: hidden;
+    @media screen and (min-width: 1360px) {
+      margin: 0 70px;
+    }
+  }
+  .slick-arrow + &__wrapper {
+    margin: 0 36px;
+    @media screen and (min-width: 1200px) {
+      margin: 0 70px;
+    }
+  }
+  &__carousel {
+    display: none;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__item {
+    display: flex!important;
+    width: 100%!important;
+    flex: 0 0 auto;
+    padding: 0 15px;
+  }
+  .slick-track {
+    display: flex;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .slick-slide {
+    display: flex;
+    flex: 0 0 auto;
+    & > div {
+      display: flex;
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+  .slick-arrow {
+    display: block;
+    width: 18px;
+    height: 96px;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -48px;
+    svg {
+      stroke: #6C6C6C;
+      width: 18px;
+      height: 96px;
+      @include transition;
+    }
+    &:hover,
+    &:active {
+      svg {
+        stroke: $color-blue;
+      }
+    }
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+}
