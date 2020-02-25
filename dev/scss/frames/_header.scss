@@ -1,19 +1,25 @@
 .header {
   background: $color-brown;
   position: relative;
-  z-index: 100;
   &__content {
-    height: 80px;
+    height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @media screen and (min-width: 990px) {
+      height: 80px;
+    }
   }
   &__logo {
     flex: 0 0 auto;
     position: relative;
-    width: 237px;
+    width: 190px;
     height: 100%;
+    z-index: 21;
+    @media screen and (min-width: 990px) {
+      width: 237px;
+    }
   }
   &__logo-link {
     display: block;
@@ -27,16 +33,38 @@
   }
   &__logo-img {
     max-width: none;
-    width: 237px;
+    width: 190px;
+    @media screen and (min-width: 990px) {
+      width: 237px;
+    }
   }
   &__contacts {
-    display: flex;
-    justify-content: center;
+    display: none;
+    justify-content: flex-end;
     align-items: center;
+    flex: 1 1 auto;
+    padding: 0 12.5px;
+    @media screen and (min-width: 480px) {
+      display: flex;
+    }
+    @media screen and (min-width: 990px) {
+      flex: 0 1 auto;
+      justify-content: center;
+      padding: 0;
+    }
   }
   &__contact {
-    padding: 0 16px;
     flex: 0 0 auto;
+    padding: 0 12.5px;
+    @media screen and (min-width: 990px) {
+      padding: 0 16px;
+    }
+    &_mail {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
   &__contact-link {
     line-height: 14px;
@@ -76,6 +104,10 @@
   &__search {
     flex: 0 0 auto;
     width: 220px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
     @media screen and (min-width: 1200px) {
       width: 270px;
     }
@@ -85,5 +117,38 @@
     left: 0;
     top: 100%;
     width: 100%;
+    display: none;
+    z-index: 20;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+  }
+  &__pull {
+    width: 21px;
+    height: 16px;
+    flex: 0 0 auto;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    @media screen and (min-width: 990px) {
+      display: none;
+    }
+    div {
+      width: 21px;
+      height: 2px;
+      background: #D3D3D3;
+      position: absolute;
+      left: 0;
+      border-radius: 5px;
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 7px;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
   }
 }

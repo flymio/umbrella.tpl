@@ -8,16 +8,27 @@
   }
   &__img-block {
     margin-bottom: 25px;
-    float: left;
-    margin-left: -300px;
-    width: 730px;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      float: left;
+      margin-left: -300px;
+      width: 730px;
+    }
     @media screen and (min-width: 1200px) {
       margin-top: -30px;
       width: 815px;
     }
   }
+  &__img {
+    margin: 0 auto;
+    @media screen and (min-width: 990px) {
+      margin: 0;
+    }
+  }
   &__text {
-    margin-left: 470px;
+    @media screen and (min-width: 990px) {
+      margin-left: 470px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 600px;
     }

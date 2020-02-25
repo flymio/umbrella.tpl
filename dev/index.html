@@ -17,13 +17,13 @@
                 </a>
               </div>
               <div class="header__contacts">
-                <div class="header__contact">
+                <div class="header__contact header__contact_phone">
                   <a href="tel:+74956699902" class="header__contact-link header__contact-link_phone">
                     <i class="fa fa-phone header__contact-icon header__contact-icon_phone" aria-hidden="true"></i>
                     +7 (495) 669-99-02
                   </a>
                 </div>
-                <div class="header__contact">
+                <div class="header__contact header__contact_mail">
                   <a href="mailto:7710733@gmail.com" class="header__contact-link header__contact-link_mail">
                     <i class="fa fa-envelope header__contact-icon header__contact-icon_mail" aria-hidden="true"></i>
                     7710733@gmail.com
@@ -40,29 +40,36 @@
                 </form>
               </div>
               <!-- End (search) -->
-              <!-- (nav) -->
-              <nav class="nav header__nav">
-                <ul class="nav__list">
-                  <li class="nav__item active">
-                    <a href="#" class="nav__link">О нас</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Бухгалтерское обслуживание</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Кадровый консалтинг</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Юридические услуги</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Блог</a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- End (nav) -->
+              <div class="header__pull" id="pull">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
+          <!-- (nav) -->
+          <nav class="nav header__nav">
+            <div class="nav__cover cover">
+              <ul class="nav__list">
+                <li class="nav__item active">
+                  <a href="#" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Бухгалтерское обслуживание</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Кадровый консалтинг</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Юридические услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Блог</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End (nav) -->
         </header>
         <!-- End (header) -->
         <!-- (main-banner) -->
@@ -98,7 +105,7 @@
               <h1 class="main-banner__title">
                 <span>Экспертиза</span> финансов и бухучета право
               </h1>
-              <a href="#" class="main-banner__button">Получить консультацию</a>
+              <a href="javascript:;" data-fancybox data-src="#call" class="main-banner__button">Получить консультацию</a>
             </div>
           </div>
         </section>
@@ -115,92 +122,124 @@
               <div class="news__wrapper">
                 <div class="news__carousel" id="news-carousel">
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link">Рабочий график нашего офиса в 2020 г. начнется <br><strong>с 9 января</strong></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        26 декабря 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          26 декабря 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link">В <span>блоге</span> появилась новая статья <strong>“ООО по домашнему адресу. Требуется ли соут?”</strong></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        16 декабря 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          16 декабря 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link"><strong>ГД РФ приняла ряд поправок</strong> в нескольких законах Подробнее на <span>duma.gov.ru</span></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        20 ноября 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          20 ноября 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link"><strong>“ОСНО: как стать крайним и заплатить налог за другого”</strong> Читайте в <span>блоге</span></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        26 апреля 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          26 апреля 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link">Рабочий график нашего офиса в 2020 г. начнется <br><strong>с 9 января</strong></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        26 декабря 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          26 декабря 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link">В <span>блоге</span> появилась новая статья <strong>“ООО по домашнему адресу. Требуется ли соут?”</strong></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        16 декабря 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          16 декабря 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link"><strong>ГД РФ приняла ряд поправок</strong> в нескольких законах Подробнее на <span>duma.gov.ru</span></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        20 ноября 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          20 ноября 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                   <div class="news__item">
+                    <!-- (new) -->
                     <div class="new">
                       <h6 class="new__name">
                         <a href="#" class="new__name-link"><strong>“ОСНО: как стать крайним и заплатить налог за другого”</strong> Читайте в <span>блоге</span></a>
                       </h6>
                       <div class="new__date">
-                        <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
-                        26 апреля 2019
+                        <div class="new__date-number">
+                          <i class="fa fa-history new__icon-date" aria-hidden="true"></i>
+                          26 апреля 2019
+                        </div>
                       </div>
                     </div>
+                    <!-- End (new) -->
                   </div>
                 </div>
               </div>
@@ -410,7 +449,7 @@
                     <div class="footer__copyright">© 2019 / Все права защищены</div>
                   </div>
                   <div class="footer__bottom-content">
-                    <div class="footer__button-up">
+                    <div class="footer__button-up" id="button-up">
                       <i class="fa fa-arrow-circle-up footer__button-up-icon" aria-hidden="true"></i>
                     </div>
                   </div>
@@ -600,6 +639,133 @@
       </div>
     </div>
     <!-- End (wrapper) -->
+    <!-- (mobile-modal) -->
+    <div class="mobile-modal" id="mobile-modal">
+      <div class="mobile-modal__wrapper">
+        <div class="mobile-modal__content">
+          <div class="mobile-modal__logo">
+            <a href="/" class="mobile-modal__logo-link">
+              <img src="images/icon-footer-logo.png" alt="Umbrella Finance" class="mobile-modal__img">
+            </a>
+          </div>
+          <!-- (search) -->
+          <div class="search mobile-modal__search">
+            <form action="#" name="form" method="POST">
+              <input type="text" name="search" value="" placeholder="Введите ключевое слово" class="search__input mobile-modal__search-input">
+              <button type="submit" name="submit" class="search__submit mobile-modal__search-submit">
+                <i class="fa fa-search search__icon" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          <!-- End (search) -->
+          <ul class="mobile-modal__nav">
+            <li class="mobile-modal__nav-item active">
+              <a href="#" class="mobile-modal__nav-link">О нас</a>
+            </li>
+            <li class="mobile-modal__nav-item">
+              <a href="#" class="mobile-modal__nav-link">Бухгалтерское обслуживание</a>
+            </li>
+            <li class="mobile-modal__nav-item">
+              <a href="#" class="mobile-modal__nav-link">Кадровый консалтинг</a>
+            </li>
+            <li class="mobile-modal__nav-item">
+              <a href="#" class="mobile-modal__nav-link">Юридические услуги</a>
+            </li>
+            <li class="mobile-modal__nav-item">
+              <a href="#" class="mobile-modal__nav-link">Блог</a>
+            </li>
+          </ul>
+          <div class="mobile-modal__contacts">
+            <div class="mobile-modal__contact">
+              <a href="tel:+7 (495) 669-99-02" class="mobile-modal__contact-link">+7 (495) 669-99-02</a>
+            </div>
+            <div class="mobile-modal__contact">
+              <a href="mailto:7710733@gmail.com" class="mobile-modal__contact-link">7710733@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End (mobile-modal) -->
+    <!-- (modal) -->
+    <div class="modal" id="call">
+      <div class="modal__content">
+        <h6 class="modal__title">Мы перезвоним как можно быстрее!</h6>
+        <form action="#" name="form" method="POST">
+          <div class="modal__form">
+            <div class="modal__form-fields">
+              <div class="modal__form-select">
+                <select name="country" id="country">
+                  <option value="russia" class="lang-ru">russia</option>
+                  <option value="usa" class="lang-usa">usa</option>
+                  <option value="spain" class="lang-spain">spain</option>
+                </select>
+              </div>
+              <input type="tel" name="phone" value="" placeholder="Введите телефон" class="modal__form-input">
+            </div>
+            <button type="submit" name="submit" class="modal__form-submit">Жду звонка</button>
+          </div>
+        </form>
+        <div class="modal__ahtung">Пожалуйста, введите номер в международном формате, например <br>+7 (495) 669-99-02</div>
+      </div>
+      <div class="modal__contacts">
+        <div class="modal__contacts-label">Или свяжитесь с нами:</div>
+        <div class="modal__contacts-list">
+          <div class="modal__contact">
+            <div class="modal__contact-text">
+              <i class="fa fa-clock-o modal__contact-icon modal__contact-icon_clock" aria-hidden="true"></i>
+              10:00-18:00
+            </div>
+          </div>
+          <div class="modal__contact">
+            <a href="tel:+74956699902" class="modal__contact-text">
+              <i class="fa fa-phone modal__contact-icon modal__contact-icon_phone" aria-hidden="true"></i>
+              +7 (495) 669-99-02
+            </a>
+          </div>
+          <div class="modal__contact">
+            <a href="mailto:7710733@gmail.com" class="modal__contact-text">
+              <i class="fa fa-envelope modal__contact-icon modal__contact-icon_mail" aria-hidden="true"></i>
+              7710733@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End (modal) -->
+    <!-- (message-form) -->
+    <div class="message-form compensate-for-scrollbar">
+      <div class="message-form__wrapper">
+        <div class="message-form__close" id="message-form-close"></div>
+        <div class="message-form__heading" id="message-form-heading">
+          <i class="fa fa-envelope message-form__icon" aria-hidden="true"></i>
+          <div class="message-form__heading-text">Напишите нам сообщение</div>
+        </div>
+        <form action="#" name="form" method="POST">
+          <div class="message-form__content">
+            <p class="message-form__description">Оставьте свое сообщение в этой форме, мы получим его на e-mail</p>
+            <div class="message-form__fields">
+              <div class="message-form__field">
+                <textarea name="message" placeholder="Ваше сообщение" class="message-form__textarea"></textarea>
+              </div>
+              <div class="message-form__field">
+                <input type="text" name="name" value="" placeholder="Ваше имя" class="message-form__input">
+              </div>
+              <div class="message-form__field">
+                <input type="tel" name="phone" value="" placeholder="Ваш телефон" class="message-form__input">
+              </div>
+              <div class="message-form__field">
+                <input type="email" name="email" value="" placeholder="Ваше e-mail" class="message-form__input">
+              </div>
+              <div class="message-form__field">
+                <button type="submit" name="submit" class="message-form__submit">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End (message-form) -->
     @include('./include/scripts.html');
   </body>
 </html>

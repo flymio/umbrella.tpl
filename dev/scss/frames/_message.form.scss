@@ -1,0 +1,159 @@
+.message-form {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  @media screen and (min-width: 480px) {
+    right: 15px;
+    width: 337px;
+  }
+  @media screen and (min-width: 990px) {
+    right: 30px;
+  }
+  &__wrapper {
+    border-radius: 8px 26px 0 0;
+    @include transition;
+  }
+  &.active &__wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__close {
+    display: none;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    background: $color-white;
+    @include transition;
+    opacity: 0;
+    visibility: hidden;
+    @media screen and (min-width: 480px) {
+      display: block;
+    }
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -1px;
+      margin-top: -9px;
+      background: #878787;
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+  &.active &__close {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__heading {
+    height: 40px;
+    width: 100%;
+    background: $color-light-blue;
+    overflow: hidden;
+    position: relative;
+    padding: 0 15px 0 45px;
+    color: $color-white;
+    letter-spacing: 0;
+    cursor: pointer;
+    @media screen and (min-width: 480px) {
+      border-radius: 8px 26px 0px 0px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 57px;
+      height: 57px;
+      position: absolute;
+      right: -33px;
+      top: -25px;
+      background: $color-green;
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-white;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &__heading-text {
+    padding-top: 8px;
+  }
+  &__content {
+    padding: 17px 17px 13px;
+    background: $color-white;
+    display: none;
+  }
+  &__description {
+    letter-spacing: 0.5px;
+    margin: 0 0 17px;
+    line-height: 20px;
+  }
+  &__fields {
+    padding-bottom: 4px;
+  }
+  &__field {
+    margin-bottom: 13px;
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    border: 1px solid #F8F8F8;
+    border-radius: 3px;
+    background: $color-white;
+    width: 100%;
+    font: $regular 12px $font;
+    color: $color-dark;
+    outline: none;
+    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.05);
+  }
+  &__input {
+    height: 40px;
+    padding: 0 20px;
+  }
+  &__textarea {
+    height: 80px;
+    padding: 11px 20px;
+    resize: none;
+  }
+  &__submit {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: $color-orange;
+    color: $color-white;
+    text-transform: none;
+    font: $extrabold 13px $font;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    @include transition;
+    letter-spacing: 0.5px;
+    padding: 0;
+    &:hover,
+    &:active {
+      background: $color-green;
+    }
+  }
+}

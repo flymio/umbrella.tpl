@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 100%;
   flex: 0 0 auto;
+  text-align: center;
+  @media screen and (min-width: 600px) {
+    text-align: left;
+  }
   &__name {
     margin: 0;
     font-size: 14px;
@@ -27,10 +31,17 @@
   }
   &__date {
     flex: 0 0 auto;
-    color: #6C6C6C;
     margin-top: 13px;
+  }
+  &__date-number {
+    color: #6C6C6C;
     position: relative;
     padding-left: 23px;
+    display: table;
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      margin: 0;
+    }
   }
   &__icon-date {
     display: block;

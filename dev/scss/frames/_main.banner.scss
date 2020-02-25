@@ -1,20 +1,36 @@
 .main-banner {
   background: $color-white;
   position: relative;
+  overflow: hidden;
   &__illustration {
-    width: 1920px;
-    height: 501px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 50%;
-    margin-left: -960px;
-    top: 70px;
+    left: 0;
+    top: 0;
     background: url(../images/bg-main-banner.jpg) center center no-repeat;
+    background-size: cover;
+    display: none;
+    @media screen and (min-width: 600px) {
+      display: block;
+    }
+    @media screen and (min-width: 990px) {
+      width: 1920px;
+      height: 501px;
+      background-size: auto;
+      margin-left: -960px;
+      top: 70px;
+      left: 50%;
+    }
   }
   &__character {
-    display: block;
+    display: none;
     position: absolute;
     z-index: 10;
     cursor: pointer;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
     &_1 {
       width: 90px;
       height: 307px;
@@ -26,7 +42,9 @@
     &_3 {
       width: 157px;
       height: 391px;
-      display: none;
+      @media screen and (min-width: 990px) {
+        display: none;
+      }
       @media screen and (min-width: 1600px) {
         display: block;
       }
@@ -158,10 +176,18 @@
     justify-content: center;
   }
   &__cover {
-    padding-top: 200px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
-    padding-bottom: 261px;
+    padding-bottom: 90px;
+    @media screen and (min-width: 768px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-top: 200px;
+      padding-bottom: 234px;
+    }
   }
   &__info {
     text-align: center;
@@ -170,31 +196,56 @@
   &__title {
     color: #FE4C36;
     text-transform: uppercase;
-    font: $regular 37px / 50px 'Posterizer KG Sketch', sans-serif;
+    font: $regular 27px / 31px 'Posterizer KG Sketch', sans-serif;
     margin: 0;
     position: relative;
     z-index: 11;
+    @media screen and (min-width: 480px) {
+      font-size: 30px;
+      line-height: 43px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 37px;
+      line-height: 50px;
+    }
     span {
-      font-size: 65px;
-      line-height: 70px;
+      font-size: 38px;
+      line-height: 38px;
       display: block;
-      letter-spacing: 6.5px;
+      letter-spacing: 2.5px;
+      @media screen and (min-width: 480px) {
+        font-size: 55px;
+        line-height: 63px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 65px;
+        line-height: 70px;
+        letter-spacing: 6.5px;
+      }
     }
   }
   &__button {
     display: inline-block;
     background: $color-green;
     color: $color-white;
-    font-size: 13px;
+    font-size: 11px;
     line-height: normal;
     font-weight: $extrabold;
-    padding: 16.5px 40px;
+    padding: 13.5px 30px;
     border-radius: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 33px;
+    margin-top: 25px;
     position: relative;
     z-index: 11;
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 33px;
+      padding: 16.5px 40px;
+      font-size: 13px;
+    }
     &:hover,
     &:active {
       text-decoration: none;

@@ -1,0 +1,260 @@
+.modal {
+  display: none;
+  width: 572px;
+  background: $color-green;
+  border-radius: 10px;
+  &__content {
+    padding: 39px 30px 37px;
+    @media screen and (min-width: 600px) {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: $extrabold;
+    text-transform: none;
+    color: $color-dark;
+    margin: 0 0 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      text-align: left;
+    }
+  }
+  &__form {
+    position: relative;
+    padding-bottom: 8px;
+    @media screen and (min-width: 480px) {
+      padding-right: 137px;
+      margin-bottom: 18px;
+      padding-bottom: 0;
+    }
+  }
+  &__form-fields {
+    position: relative;
+    height: 43px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+      margin-bottom: 0;
+    }
+  }
+  &__form-select {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 60px;
+    & > select {
+      display: none;
+    }
+    .jq-selectbox {
+      display: block!important;
+      cursor: pointer;
+    }
+    .jq-selectbox__select {
+      height: 43px;
+      padding: 0 20px 0 0;
+      background: none;
+      font: $regular 0px $font;
+      color: $color-dark;
+    }
+    .jq-selectbox.lang-ru .jq-selectbox__select {
+      background: url(../images/icon-lang-ru.png) 16px center no-repeat;
+    }
+    .jq-selectbox.lang-usa .jq-selectbox__select {
+      background: url(../images/icon-lang-usa.png) 16px center no-repeat;
+    }
+    .jq-selectbox.lang-spain .jq-selectbox__select {
+      background: url(../images/icon-lang-spain.png) 16px center no-repeat;
+    }
+    .jq-selectbox.disabled .jq-selectbox__select {
+      color: #999;
+    }
+    .jq-selectbox__select-text {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .jq-selectbox .placeholder {
+      color: #999;
+    }
+    .jq-selectbox__trigger {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 100%;
+    }
+    .jq-selectbox__trigger-arrow {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 7px;
+      height: 4px;
+      border-top: 4px solid $color-dark;
+      border-right: 3.5px solid transparent;
+      border-left: 3.5px solid transparent;
+    }
+    .jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+      border-top-color: #999;
+    }
+    .jq-selectbox__dropdown {
+      left: 0!important;
+      top: 100%!important;
+      right: auto!important;
+      bottom: auto!important;
+      width: 100%!important;
+      margin: 5px 0;
+      padding: 0 13px 0 0;
+      font: $regular 0px $font;
+    }
+    .jq-selectbox ul {
+      margin: 0;
+      padding: 0;
+      border-radius: 5px 5px;
+      background: $color-white;
+    }
+    .jq-selectbox li {
+      user-select: none;
+      white-space: normal;
+      color: $color-dark;
+      position: relative;
+      height: 30px;
+      &.lang-ru {
+        background: url(../images/icon-lang-ru.png) 16px center no-repeat;
+      }
+      &.lang-usa {
+        background: url(../images/icon-lang-usa.png) 16px center no-repeat;
+      }
+      &.lang-spain {
+        background: url(../images/icon-lang-spain.png) 16px center no-repeat;
+      }
+    }
+    .jq-selectbox li.selected {
+      color: $color-blue;
+    }
+    .jq-selectbox li:hover {
+      color: $color-blue;
+    }
+    .jq-selectbox li.disabled {
+      color: #999;
+    }
+    .jq-selectbox li.disabled:hover {
+      background: none;
+    }
+  }
+  &__form-input {
+    display: block;
+    width: 100%;
+    height: 43px;
+    padding: 0 15px 0 60px;
+    background: $color-white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font: $regular 12px $font;
+    color: $color-dark;
+    @media screen and (min-width: 480px) {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  &__form-submit {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 43px;
+    position: relative;
+    right: 0;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: $color-orange;
+    color: $color-white;
+    padding: 0;
+    font: $extrabold 13px $font;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+      width: 137px;
+      border-radius: 0 5px 5px 0;
+      position: absolute;
+      margin-bottom: 0;
+    }
+  }
+  &__ahtung {
+    letter-spacing: 0.14px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      text-align: left;
+    }
+  }
+  &__contacts {
+    background: #9CB039;
+    border-radius: 0 0 10px 10px;
+    padding: 24px 30px 30px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      padding-left: 45px;
+      padding-right: 45px;
+      text-align: left;
+    }
+  }
+  &__contacts-label {
+    font-weight: $extrabold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 14px;
+  }
+  &__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    @media screen and (min-width: 600px) {
+      margin: 0 -22px 0 0;
+    }
+  }
+  &__contact {
+    position: relative;
+    padding: 1px 0;
+    width: 100%;
+    flex: 0 0 auto;
+    @media screen and (min-width: 600px) {
+      width: auto;
+      flex: 0 1 auto;
+      padding-right: 22px;
+    }
+  }
+  &__contact-text {
+    color: $color-dark;
+    text-decoration: none;
+    cursor: text;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    letter-spacing: 0.8px;
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &__contact-icon {
+    font-size: 13px;
+    line-height: 13px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-dark;
+    &_mail {
+      font-size: 12px;
+    }
+  }
+}

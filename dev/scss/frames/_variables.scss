@@ -12,11 +12,12 @@
   }
   &__item {
     flex: 0 0 auto;
-    width: (100% / 3);
+    width: 100%;
     padding: 0 15px 63px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 990px) {
+      width: (100% / 3);
+    }
   }
   &__item-icon-block {
     position: relative;
@@ -50,8 +51,14 @@
     text-align: center;
     margin: 0 auto 26px;
     min-height: 42px;
+    display: block;
   }
   &__item-text {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    @media screen and (min-width: 990px) {
+      max-width: none;
+      margin: 0;
+    }
   }
 }

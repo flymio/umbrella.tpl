@@ -1,20 +1,33 @@
 .footer {
   background: $color-brown;
   &__cover {
-    padding-top: 84px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    @media screen and (min-width: 990px) {
+      padding-top: 84px;
+      padding-bottom: 70px;
+    }
   }
   &__content {
     position: relative;
     display: flex;
     position: relative;
-    margin-right: -50px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+    @media screen and (min-width: 990px) {
+      margin-right: -50px;
+      flex-wrap: nowrap;
+      padding-bottom: 0;
+    }
   }
   &__side-bar {
     display: flex;
     flex: 0 0 auto;
-    padding-right: 50px;
-    width: 18%;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      padding-right: 50px;
+      width: 18%;
+    }
     @media screen and (min-width: 1200px) {
       width: 24%;
     }
@@ -24,6 +37,10 @@
     flex-direction: column;
     flex: 0 0 auto;
     width: 100%;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      text-align: left;
+    }
     @media screen and (min-width: 1200px) {
       width: 155px;
     }
@@ -35,7 +52,13 @@
     flex: 0 0 auto;
   }
   &__logo {
-    margin: 0 0 45px;
+    display: block;
+    margin: 0 auto 17px;
+    width: 126px;
+    @media screen and (min-width: 990px) {
+      margin: 0 0 45px;
+      width: auto;
+    }
   }
   &__logo-link {
     text-decoration: none;
@@ -68,7 +91,10 @@
   }
   &__navs {
     display: flex;
-    width: 82%;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      width: 82%;
+    }
     @media screen and (min-width: 1200px) {
       width: (100% - 24%);
     }
@@ -76,6 +102,10 @@
   &__nav-block {
     flex: 0 0 auto;
     padding-right: 50px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
     &_1 {
       width: 22%;
     }
@@ -136,25 +166,37 @@
   &__sub-navs {
     display: flex;
     flex-direction: column;
-    width: 56%;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      width: 56%;
+    }
   }
   &__sub-navs &__top-content {
     display: flex;
   }
   &__sub-navs &__bottom-content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    @media screen and (min-width: 990px) {
+      justify-content: flex-end;
+    }
   }
   &__socials {
     list-style: none;
-    margin: 0 -18px;
+    margin: 0 -10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 0;
+    @media screen and (min-width: 990px) {
+      margin: 0 -18px;
+    }
   }
   &__socials-item {
-    padding: 0 18px 17px;
+    padding: 0 10px 17px;
+    @media screen and (min-width: 990px) {
+      padding: 0 18px 17px;
+    }
   }
   &__socials-link {
     &:hover,
@@ -171,11 +213,17 @@
     fill: #D3D3D3;
   }
   &__sub-block {
-    width: 270px;
-    margin-right: 50px;
+    @media screen and (min-width: 990px) {
+      width: 270px;
+      margin-right: 50px;
+    }
   }
   &__search {
     margin-bottom: 17px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
   &__search-input {
     &::-webkit-input-placeholder {
@@ -196,10 +244,19 @@
     }
   }
   &__button-up {
-    margin-bottom: 17px;
     line-height: 40px;
     font-size: 40px;
     cursor: pointer;
     color: #D3D3D3;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (min-width: 990px) {
+      margin-bottom: 17px;
+      position: relative;
+      left: 0;
+      transform: none;
+    }
   }
 }

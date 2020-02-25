@@ -1,6 +1,8 @@
 .customer-support {
   &__cover {
-    padding-bottom: 55px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 55px;
+    }
     @media screen and (min-width: 1200px) {
       padding-bottom: 40px;
     }
@@ -14,8 +16,24 @@
   &__contacts-bar,
   &__form-bar {
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
     padding: 0 15px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      padding-bottom: 0;
+    }
+  }
+  &__contacts-bar {
+    padding-bottom: 40px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 0;
+    }
+  }
+  &__form-bar {
+    padding-bottom: 55px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 0;
+    }
   }
   &__contacts {
     @media screen and (min-width: 1200px) {
