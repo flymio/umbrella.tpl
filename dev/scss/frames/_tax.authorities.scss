@@ -1,0 +1,61 @@
+.tax-authorities {
+  padding-bottom: 55px;
+  &__section-heading {
+    max-width: 440px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -25px;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding: 0 25px 50px;
+    width: (100% / 3);
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &__item-img-block {
+    height: 84px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      width: 85px;
+      margin-right: 20px;
+      margin-bottom: 0;
+      height: auto;
+    }
+  }
+  &__item-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 85px;
+    max-height: 100%;
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      margin: 0 auto;
+      max-height: none;
+    }
+  }
+  &__item-text {
+    position: relative;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-top: -7px;
+    }
+  }
+}

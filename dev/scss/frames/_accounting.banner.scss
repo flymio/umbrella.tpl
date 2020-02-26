@@ -1,0 +1,25 @@
+.accounting-banner {
+  &__cover {
+    padding-top: 106px;
+    padding-bottom: 80px;
+  }
+  &__img {
+    display: block;
+    max-width: none;
+    position: relative;
+    margin-left: -300px;
+    float: left;
+    margin-top: -25px;
+    @media screen and (min-width: 1200px) {
+      margin-left: -250px;
+    }
+  }
+  &__text {
+    margin-left: 470px;
+    max-height: 385px;
+    overflow: hidden;
+    @media screen and (min-width: 1200px) {
+      margin-left: 600px;
+    }
+  }
+}

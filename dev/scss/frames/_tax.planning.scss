@@ -1,0 +1,38 @@
+.tax-planning {
+  &__section-heading {
+    max-width: 330px;
+  }
+  &__columns {
+    display: flex;
+    position: relative;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+  }
+  &__column {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    width: 50%;
+  }
+  &__section {
+    margin-top: 30px;
+    display: flex;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__icon-block {
+    flex: 0 0 auto;
+    width: 28px;
+    margin-right: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
+  &__icon {
+    max-width: 28px;
+    margin: 0 auto;
+  }
+  &__text {
+    flex: 1 1 auto;
+  }
+}

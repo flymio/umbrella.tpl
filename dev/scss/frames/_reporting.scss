@@ -1,0 +1,75 @@
+.reporting {
+  background: $color-gray;
+  overflow: hidden;
+  padding-bottom: 60px;
+  &__section-heading {
+    max-width: 630px;
+  }
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__column {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 15px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0 0 0 34px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  &__list-item {
+    display: block;
+    position: relative;
+    padding-left: 34px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: $extrabold;
+  }
+  &__list-icon-check {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $color-orange;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+  &__section {
+    padding-top: 10px;
+    display: flex;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  &__icon-block {
+    width: 31px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
+  &__icon {
+    margin: 0 auto;
+    max-width: 31px;
+  }
+  &__info {
+    flex: 1 1 auto;
+  }
+  &__info-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-dark;
+    font-weight: $extrabold;
+    margin: -3px 0 25px;
+    position: relative;
+  }
+}

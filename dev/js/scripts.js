@@ -143,6 +143,9 @@ $(function () {
       contentForm.stop(true, true).slideUp(200);
     }
   });
+
+  // Стилизация скроллинга
+  $('.scrollbar-inner').scrollbar();
 });
 
 // Карта

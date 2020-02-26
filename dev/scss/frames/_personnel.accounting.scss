@@ -1,0 +1,25 @@
+.personnel-accounting {
+  background: $color-gray;
+  padding-bottom: 60px;
+  overflow: hidden;
+  &__section-heading {
+    max-width: 550px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__column {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 15px;
+    small {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      display: block;
+    }
+  }
+}

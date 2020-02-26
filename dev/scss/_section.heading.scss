@@ -6,6 +6,7 @@
     color: $color-dark;
     text-align: center;
     letter-spacing: 1.4px;
+    word-wrap: break-word;
     @media screen and (min-width: 480px) {
       letter-spacing: 3px;
       font-size: 30px;

@@ -1,0 +1,40 @@
+.functions {
+  background: $color-gray;
+  overflow: hidden;
+  &__cover {
+    padding-bottom: 57px;
+  }
+  &__section-heading {
+    max-width: 355px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 -11px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: (100% / 4);
+    padding: 0 11px 22px;
+  }
+  &__item-icon-block {
+    width: 28px;
+    flex: 0 0 auto;
+    margin-right: 13px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
+  &__item-icon {
+    max-width: 28px;
+    margin: 0 auto;
+  }
+  &__item-name {
+    flex: 1 1 auto;
+    font-weight: $extrabold;
+    text-transform: uppercase;
+  }
+}

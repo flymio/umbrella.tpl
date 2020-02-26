@@ -1,0 +1,101 @@
+.recovery {
+  padding-bottom: 57px;
+  &__section-heading {
+    max-width: 360px;
+  }
+  &__content {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 490px;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      background: url(../images/img-vector.png) center center no-repeat;
+      z-index: 1;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+    z-index: 2;
+  }
+  &__item {
+    flex: 0 0 auto;
+    width: (100% / 3);
+    padding: 29px 15px 30px;
+    display: flex;
+    &_one {
+      padding-top: 90px;
+      @media screen and (min-width: 1200px) {
+        padding-top: 155px;
+      }
+    }
+    &_two {
+      padding-top: 60px;
+      @media screen and (min-width: 1200px) {
+        padding-top: 84px;
+      }
+    }
+  }
+  &__item-content {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.15);
+    padding: 60px 30px 30px;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      padding: 111px 45px 36px;
+    }
+  }
+  &__item_two &__item-content {
+    padding-top: 90px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 182px;
+    }
+  }
+  &__item_three &__item-content {
+    padding-top: 121px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 237px;
+    }
+  }
+  &__item-number {
+    display: block;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    left: 37px;
+    top: -29px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 58px;
+    color: $color-white;
+    font-size: 18px;
+    font-weight: $extrabold;
+    letter-spacing: 0;
+    &_red {
+      background: #FD0101;
+    }
+    &_orange {
+      background: #F59A00;
+    }
+    &_yellow {
+      background: #F6DC27;
+    }
+  }
+  &__item-name {
+    font-size: 18px;
+    font-weight: $extrabold;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color-dark;
+    margin: 0;
+  }
+  &__item-text {
+    margin: 25px 0 0;
+  }
+}
