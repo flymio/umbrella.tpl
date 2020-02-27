@@ -197,7 +197,7 @@
   &__title {
     color: #FE4C36;
     text-transform: uppercase;
-    font: $regular 27px / 31px 'Posterizer KG Sketch', sans-serif;
+    font: $regular 25px / 29px 'Posterizer KG Sketch', sans-serif;
     margin: 0;
     position: relative;
     z-index: 11;
@@ -211,7 +211,7 @@
     }
     span {
       font-size: 38px;
-      line-height: 38px;
+      line-height: 36px;
       display: block;
       letter-spacing: 2.5px;
       @media screen and (min-width: 480px) {

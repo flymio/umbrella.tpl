@@ -1,17 +1,21 @@
 .zero-balance {
   padding-bottom: 50px;
   &__img {
-    max-width: none;
-    float: right;
+    margin: 0 auto 25px;
     position: relative;
-    margin-top: -33px;
-    margin-right: -100px;
+    @media screen and (min-width: 990px) {
+      float: right;
+      margin: -33px -100px 0 0;
+      max-width: none;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 20px;
     }
   }
   &__text {
-    margin-right: 470px;
+    @media screen and (min-width: 990px) {
+      margin-right: 470px;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 600px;
     }

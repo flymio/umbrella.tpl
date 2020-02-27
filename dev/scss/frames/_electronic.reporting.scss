@@ -1,0 +1,104 @@
+.electronic-reporting {
+  padding-bottom: 15px;
+  @media screen and (min-width: 990px) {
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+  &__section-heading {
+    max-width: 400px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding: 0 15px 47px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    @media screen and (min-width: 990px) {
+      width: (100% / 3);
+      padding-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__item-number-block {
+    flex: 0 0 auto;
+    margin: 0 auto 15px;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      margin: -14px 44px 20px 0;
+    }
+  }
+  &__item-number {
+    width: 56px;
+    height: 56px;
+    background: $color-white;
+    border-radius: 50%;
+    border: 1px solid $color-orange;
+    font-size: 18px;
+    line-height: 56px;
+    font-weight: $extrabold;
+    text-align: center;
+    letter-spacing: 0;
+    color: $color-dark;
+    @media screen and (min-width: 1200px) {
+      background: url(../images/bg-number.svg) left top no-repeat;
+      background-size: 100% 100%;
+      border-radius: 0;
+      border: none;
+    }
+  }
+  &__item-content {
+    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      flex: 1 1 auto;
+      width: auto;
+      text-align: left;
+    }
+  }
+  &__item-title {
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 28px;
+    color: #A5A5A5;
+    font-weight: $extrabold;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+  &__item-name {
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-dark;
+    font-weight: $extrabold;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__item-description {
+    margin: 0 auto 15px;
+    max-width: 500px;
+    @media screen and (min-width: 990px) {
+      margin: 0 0 15px;
+      max-width: none;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -13,8 +13,11 @@
   }
   &__column {
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
     padding: 0 15px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+    }
     small {
       font-size: 12px;
       line-height: 16px;

@@ -13,23 +13,37 @@
   }
   &__column {
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
     padding: 0 15px;
+    margin-top: 13px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      margin-top: 0;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
   }
   &__list {
     list-style: none;
-    padding: 0 0 0 34px;
+    padding: 0;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+    @media screen and (min-width: 990px) {
+      padding: 0 0 0 34px;
+    }
   }
   &__list-item {
     display: block;
     position: relative;
-    padding-left: 34px;
+    padding-left: 50px;
     line-height: 19px;
     text-transform: uppercase;
     font-weight: $extrabold;
+    @media screen and (min-width: 990px) {
+      padding-left: 34px;
+    }
   }
   &__list-icon-check {
     display: block;

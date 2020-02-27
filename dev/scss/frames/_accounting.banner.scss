@@ -1,23 +1,35 @@
 .accounting-banner {
   &__cover {
-    padding-top: 106px;
-    padding-bottom: 80px;
+    padding-top: 87px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 990px) {
+      padding-top: 106px;
+      padding-bottom: 80px;
+    }
   }
   &__img {
     display: block;
-    max-width: none;
     position: relative;
-    margin-left: -300px;
-    float: left;
-    margin-top: -25px;
+    margin: 0 auto 50px;
+    @media screen and (min-width: 990px) {
+      margin-left: -300px;
+      float: left;
+      margin-top: -25px;
+      max-width: none;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: -250px;
     }
   }
   &__text {
-    margin-left: 470px;
-    max-height: 385px;
     overflow: hidden;
+    margin-bottom: 50px;
+    max-height: 240px;
+    @media screen and (min-width: 990px) {
+      margin-left: 470px;
+      max-height: 385px;
+      margin-bottom: 0;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 600px;
     }
