@@ -995,6 +995,9 @@ input::-ms-clear {
 .variables__cover {
   padding-bottom: 21px
 }
+.variables__section-heading {
+  max-width: 400px
+}
 .variables__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2514,6 +2517,122 @@ input::-ms-clear {
 .price-finance__data-mobile-item:nth-child(even) {
   background: #d9d9d9
 }
+.consulting-banner__cover {
+  padding-top: 87px;
+  padding-bottom: 30px
+}
+.consulting-banner__img {
+  display: block;
+  position: relative;
+  margin: 0 auto 50px
+}
+.consulting-banner__variables {
+  margin-left: 470px
+}
+.consulting-banner__columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 -15px
+}
+.consulting-banner__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  margin-top: 52px
+}
+.consulting-banner__column:first-child {
+  margin-top: 0
+}
+.consulting-banner__variable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  margin-top: 52px
+}
+.consulting-banner__variable:first-child {
+  margin-top: 0
+}
+.consulting-banner__icon-block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  width: 44px
+}
+.consulting-banner__icon {
+  max-width: 44px;
+  margin: 0 auto
+}
+.consulting-banner__text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  flex: 1 1 auto;
+  position: relative;
+  margin-top: -7px
+}
+.outstaffing {
+  background: #e6e6e6;
+  overflow: hidden;
+  padding-bottom: 33px
+}
+.outstaffing__img {
+  position: relative;
+  margin: 0 auto 60px;
+  display: none
+}
+.outstaffing__variables {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 -15px
+}
+.outstaffing__variable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 50px
+}
+.outstaffing__variable:first-child {
+  margin-top: 0
+}
+.outstaffing__variable-icon-block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  margin-right: 38px;
+  width: 43px
+}
+.outstaffing__variable-icon {
+  margin: 0 auto;
+  max-width: 43px
+}
+.outstaffing__variable-text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  flex: 1 1 auto;
+  position: relative;
+  margin-top: -7px
+}
 @media screen and (min-width:480px) {
   .section-heading__name {
     letter-spacing: 3px;
@@ -2844,10 +2963,9 @@ input::-ms-clear {
     padding-bottom: 80px
   }
   .accounting-banner__img {
-    margin-left: -300px;
     float: left;
-    margin-top: -25px;
-    max-width: none
+    max-width: none;
+    margin: -25px 0 0 -300px
   }
   .accounting-banner__text {
     margin-left: 470px;
@@ -2964,6 +3082,15 @@ input::-ms-clear {
   }
   .price-finance__block-table_mobile {
     display: none
+  }
+  .consulting-banner__cover {
+    padding-top: 106px;
+    padding-bottom: 80px
+  }
+  .consulting-banner__img {
+    float: left;
+    max-width: none;
+    margin: -51px 0 0 -300px
   }
 }
 @media screen and (min-width:1200px) {
@@ -3127,6 +3254,30 @@ input::-ms-clear {
   }
   .price-finance__container-content {
     padding-left: 200px
+  }
+  .consulting-banner__variables {
+    margin-left: 600px
+  }
+  .consulting-banner__column {
+    width: 50%;
+    margin-top: 0
+  }
+  .outstaffing {
+    padding-bottom: 83px
+  }
+  .outstaffing__img {
+    margin: -20px 0 0;
+    float: right;
+    display: block
+  }
+  .outstaffing__variables {
+    margin: 0 600px 0 0
+  }
+  .outstaffing__variable {
+    width: 100%;
+    padding: 0;
+    margin-top: 33px;
+    margin-bottom: 0
   }
 }
 @media screen and (min-width:1360px) {

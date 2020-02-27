@@ -1,0 +1,66 @@
+.consulting-banner {
+  &__cover {
+    padding-top: 87px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 990px) {
+      padding-top: 106px;
+      padding-bottom: 80px;
+    }
+  }
+  &__img {
+    display: block;
+    position: relative;
+    margin: 0 auto 50px;
+    @media screen and (min-width: 990px) {
+      float: left;
+      max-width: none;
+      margin: -51px 0 0 -300px;
+    }
+  }
+  &__variables {
+    margin-left: 470px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 600px;
+    }
+  }
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__column {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    margin-top: 52px;
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      margin-top: 0;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__variable {
+    display: flex;
+    margin-top: 52px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__icon-block {
+    flex: 0 0 auto;
+    margin-right: 30px;
+    width: 44px;
+  }
+  &__icon {
+    max-width: 44px;
+    margin: 0 auto;
+  }
+  &__text {
+    flex: 1 1 auto;
+    position: relative;
+    margin-top: -7px;
+  }
+}

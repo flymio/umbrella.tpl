@@ -12,10 +12,9 @@
     position: relative;
     margin: 0 auto 50px;
     @media screen and (min-width: 990px) {
-      margin-left: -300px;
       float: left;
-      margin-top: -25px;
       max-width: none;
+      margin: -25px 0 0 -300px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: -250px;

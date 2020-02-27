@@ -3,6 +3,9 @@
   &__cover {
     padding-bottom: 21px;
   }
+  &__section-heading {
+    max-width: 400px;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
