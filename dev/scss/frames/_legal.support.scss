@@ -1,0 +1,109 @@
+.legal-support {
+  background: $color-gray;
+  overflow: hidden;
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+    @media screen and (min-width: 1200px) {
+      margin: 0 -25px;
+    }
+  }
+  &__column {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    margin-top: 70px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 60%;
+      padding: 0 25px;
+    }
+    &:first-child {
+      margin-top: 0;
+      @media screen and (min-width: 1200px) {
+        width: 40%;
+      }
+    }
+  }
+  &__title-variables {
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-weight: $extrabold;
+    @media screen and (min-width: 990px) {
+      max-width: 270px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  &__variables {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__variable {
+    display: flex;
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__variable-icon-block {
+    width: 38px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 62px;
+    }
+  }
+  &__variable-icon {
+    max-width: 38px;
+    margin: 0 auto;
+  }
+  &__variable-name {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-weight: $extrabold;
+  }
+  &__variable-name-text {
+    flex: 1 1 auto;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-weight: $extrabold;
+    margin: 0 auto 30px;
+    @media screen and (min-width: 990px) {
+      max-width: 430px;
+      text-align: center;
+      margin-bottom: 57px;
+    }
+  }
+  &__text {
+    max-height: 240px;
+    @media screen and (min-width: 990px) {
+      max-height: 290px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-height: 240px;
+    }
+  }
+  .scroll-element_track {
+    background: $color-white!important;
+  }
+}

@@ -1,0 +1,55 @@
+.consultations {
+  padding-bottom: 30px;
+  overflow: hidden;
+  @media screen and (min-width: 990px) {
+    padding-bottom: 136px;
+  }
+  &__section-heading {
+    position: relative;
+    z-index: 2;
+  }
+  &__content {
+    position: relative;
+    @media screen and (min-width: 990px) {
+      min-height: 290px;
+    }
+  }
+  &__img {
+    margin: 0 auto 50px;
+    @media screen and (min-width: 990px) {
+      position: absolute;
+      right: -390px;
+      z-index: 1;
+      bottom: -55px;
+      max-width: none;
+      margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      right: -210px;
+    }
+  }
+  &__variables {
+    width: 100%;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 990px) {
+      width: 590px;
+      padding-bottom: 0;
+    }
+  }
+  &__variables-columns {
+    position: relative;
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__variables-column {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    @media screen and (min-width: 990px) {
+      width: (100% / 3);
+    }
+  }
+}

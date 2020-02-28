@@ -1,0 +1,113 @@
+.registration {
+  background: $color-gray;
+  overflow: hidden;
+  &__section {
+    padding-top: 58px;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  &__section-title {
+    margin: 0 0 22px;
+    font-weight: $extrabold;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 28px;
+    @media screen and (min-width: 990px) {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+  }
+  &__section-text {
+    @media screen and (min-width: 990px) {
+      column-count: 2;
+      column-gap: 30px;
+    }
+  }
+  &__section-columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__section-column {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    margin-top: 30px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      margin-top: 0;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__variable {
+    display: flex;
+    margin-bottom: 28px;
+  }
+  &__variable-icon-block {
+    width: 44px;
+    margin-right: 20px;
+    flex: 0 0 auto;
+    @media screen and (min-width: 1200px) {
+      margin-right: 26px;
+    }
+  }
+  &__variable-icon {
+    max-width: 44px;
+    margin: 0 auto;
+  }
+  &__variable-text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__variable-text-content {
+    flex: 1 1 auto;
+  }
+  &__columns-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__column-list {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 26px;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      margin-top: 0;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list-item {
+    margin-top: 26px;
+    position: relative;
+    padding-left: 30px;
+    @media screen and (min-width: 990px) {
+      padding-left: 30px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__list-item-icon-check {
+    width: 20px;
+    height: 20px;
+    fill: $color-orange;
+    position: absolute;
+    left: 0;
+    top: -1px;
+  }
+}

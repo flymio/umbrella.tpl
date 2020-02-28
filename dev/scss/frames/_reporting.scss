@@ -15,7 +15,7 @@
     flex: 0 0 auto;
     width: 100%;
     padding: 0 15px;
-    margin-top: 13px;
+    margin-top: 23px;
     @media screen and (min-width: 990px) {
       width: 50%;
       margin-top: 0;
@@ -55,8 +55,11 @@
     top: 1px;
   }
   &__section {
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
+    @media screen and (min-width: 1200px) {
+      padding-top: 10px;
+    }
     &:first-child {
       padding-top: 0;
     }

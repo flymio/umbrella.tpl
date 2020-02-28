@@ -1,26 +1,12 @@
-.price-finance {
-  background: $color-gray;
-  overflow: hidden;
+.services-price {
+  padding-bottom: 85px;
+  @media screen and (min-width: 990px) {
+    padding-bottom: 55px;
+  }
   &__section-heading {
-    max-width: 250px;
+    max-width: 460px;
   }
-  &__container {
-    margin-top: 60px;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-  &__title {
-    text-align: center;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: $color-dark;
-    margin: 0 0 39px;
-    font-weight: $extrabold;
-    letter-spacing: 2px;
-  }
-  &__container-content {
+  &__content {
     overflow-y: hidden;
     overflow-x: auto;
     margin: 0 -15px;
@@ -32,11 +18,8 @@
       overflow-y: visible;
       overflow-x: visible;
     }
-    @media screen and (min-width: 1200px) {
-      padding-left: 200px;
-    }
   }
-  &__block-table {
+  &__table-block {
     &_desktop {
       display: none;
       @media screen and (min-width: 990px) {
@@ -44,36 +27,51 @@
       }
     }
     &_mobile {
-      display: block;
       @media screen and (min-width: 990px) {
         display: none;
       }
     }
   }
-  &__container-heading {
-    position: relative;
-    display: flex;
-    margin: 0 -15px 27px;
-    font-size: 14px;
+  &__data {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
     line-height: 19px;
-    text-transform: uppercase;
-    font-weight: $extrabold;
-    color: $color-dark;
   }
-  &__container-heading-name {
-    flex: 0 0 auto;
-    width: 50%;
-    padding: 0 15px;
-  }
-  &__data-columns {
-    display: flex;
-    position: relative;
-    margin: 0 -15px;
+  &__data-string {
+    display: table-row;
+    &_heading {
+      text-transform: uppercase;
+      font-weight: $extrabold;
+      color: $color-dark;
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
   &__data-column {
-    width: 50%;
-    padding: 0 15px;
-    flex: 0 0 auto;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 30px;
+    padding-bottom: 28px;
+    &:last-child {
+      padding-right: 0;
+    }
+    &_number {
+      width: 96px;
+    }
+    &_description {
+      width: 250px;
+      @media screen and (min-width: 1200px) {
+        width: 300px;
+      }
+    }
+    &_price {
+      width: 170px;
+    }
+  }
+  &__data-string &__data-column {
+    padding-bottom: 32px;
   }
   &__data-mobile-column {
     display: flex;
@@ -88,7 +86,7 @@
     @media screen and (min-width: 480px) {
       width: (100% / 3);
     }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
       width: 25%;
     }
     &:first-child {
@@ -100,7 +98,7 @@
       line-height: normal;
     }
     &:nth-child(even) {
-      background: #D9D9D9;
+      background: $color-gray;
     }
   }
 }

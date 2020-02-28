@@ -1,0 +1,37 @@
+.documentation-recovery {
+  padding-bottom: 40px;
+  &__section-heading {
+    max-width: 590px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      width: 50%;
+    }
+  }
+  &__icon-block {
+    flex: 0 0 auto;
+    width: 37px;
+    margin-right: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 33px;
+    }
+  }
+  &__icon {
+    max-width: 37px;
+    margin: 0 auto;
+  }
+  &__text {
+    flex: 1 1 auto;
+  }
+}

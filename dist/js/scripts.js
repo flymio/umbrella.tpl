@@ -146,21 +146,23 @@ $(function () {
 
   // Стилизация скроллинга
   $('.scrollbar-inner').scrollbar();
+
+  // Карта
+  if ($('section').is('#map')) {
+    ymaps.ready(init);
+    function init(){
+      var myMap = new ymaps.Map('map', {
+        center: [55.65578806907723, 37.5514835],
+        zoom: 17,
+        controls: ['zoomControl']
+      });
+    
+      var myPlacemark = new ymaps.Placemark([55.65578806907723, 37.5514835], {}, {
+        preset: 'islands#blueDotIcon'
+      });
+    
+      myMap.behaviors.disable('scrollZoom');
+      myMap.geoObjects.add(myPlacemark); 
+    }
+  }
 });
-
-// Карта
-ymaps.ready(init);
-function init(){
-  var myMap = new ymaps.Map('map', {
-    center: [55.65578806907723, 37.5514835],
-    zoom: 17,
-    controls: ['zoomControl']
-  });
-
-  var myPlacemark = new ymaps.Placemark([55.65578806907723, 37.5514835], {}, {
-    preset: 'islands#blueDotIcon'
-  });
-
-  myMap.behaviors.disable('scrollZoom');
-  myMap.geoObjects.add(myPlacemark); 
-}

@@ -1,0 +1,123 @@
+.services-banner {
+  &__cover {
+    padding-top: 87px;
+    padding-bottom: 35px;
+    @media screen and (min-width: 990px) {
+      padding-top: 97px;
+      padding-bottom: 88px;
+      min-height: 484px;
+    }
+  }
+  &__section-heading {
+    margin-bottom: 73px;
+  }
+  &__img {
+    display: block;
+    position: relative;
+    margin: 0 auto 50px;
+    @media screen and (min-width: 990px) {
+      position: absolute;
+      top: 144px;
+      left: -380px;
+      z-index: 1;
+      max-width: none;
+      margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      left: -255px;
+    }
+  }
+  &__info {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 0 auto 50px;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 77px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 45px;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-weight: $extrabold;
+    margin: 0 0 15px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__text {
+    margin: 0;
+  }
+  &__sub-info {
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 990px) {
+      width: 254px;
+      margin: 0 0 0 220px;
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+    }
+  }
+  &__sub-info-item {
+    max-width: 400px;
+    margin: 0 auto 50px;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      width: 254px;
+      height: 254px;
+      padding: 20px;
+      margin: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      max-width: none;
+    }
+    &_red {
+      @media screen and (min-width: 990px) {
+        background: rgba(245, 154, 0, 0.1);
+        border: 1px solid #F59A00;
+      }
+    }
+    &_yellow {
+      @media screen and (min-width: 990px) {
+        width: 313px;
+        height: 313px;
+        position: absolute;
+        top: -70px;
+        left: 220px;
+        background: rgba(185, 212, 51, 0.1);
+        border: 1px solid #B9D433;
+      }
+      @media screen and (min-width: 1200px) {
+        left: 226px;
+      }
+    }
+    &_blue {
+      @media screen and (min-width: 990px) {
+        width: 302px;
+        height: 302px;
+        position: absolute;
+        top: -213px;
+        left: 450px;
+        background: rgba(18, 182, 255, 0.1);
+        border: 1px solid #12B6FF;
+      }
+      @media screen and (min-width: 1200px) {
+        top: -243px;
+        left: 435px;
+      }
+    }
+  }
+  &__sub-info-content {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
