@@ -1,9 +1,10 @@
 .pagination {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-bottom: 34px;
   @media screen and (min-width: 990px) {
     padding-top: 0;
+    padding-bottom: 50px;
   }
   &__content {
     position: relative;

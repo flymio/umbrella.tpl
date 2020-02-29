@@ -165,4 +165,15 @@ $(function () {
       myMap.geoObjects.add(myPlacemark); 
     }
   }
+
+  // Реализация рейтинга
+  $('.star-value').change(function() {
+    var thisInput = $(this);
+    var parentBlock = $(this).closest('.star-item');
+    var mainParentBlock = thisInput.closest('.star-container');
+    var indexStar = parentBlock.index() + 1;
+
+    $('.star-item', mainParentBlock).removeClass('active');
+    $('.star-item:nth-child(-n+' + indexStar + ')', mainParentBlock).addClass('active');
+  });
 });

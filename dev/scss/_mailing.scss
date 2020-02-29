@@ -1,0 +1,110 @@
+.mailing {
+  border: 1px solid #07BEEA;
+  background: $color-white;
+  padding: 42px 15px 43px;
+  margin-bottom: 70px;
+  @media screen and (min-width: 480px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 600px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  &__heading {
+    padding-bottom: 47px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-weight: $extrabold;
+    margin: 0;
+  }
+  &__sub-title {
+    color: $color-light-blue;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  &__form {
+    position: relative;
+    padding-right: 46px;
+    margin: 0 auto 30px;
+    width: 100%;
+    @media screen and (min-width: 600px) {
+      width: 400px;
+    }
+    @media screen and (min-width: 990px) {
+      margin: 0 0 30px;
+      width: 100%;
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-bottom: 1px solid #BEBEBE;
+    padding: 0 9px;
+    font: $regular 12px $font;
+    color: $color-dark;
+    letter-spacing: 1px;
+    background: none;
+    outline: none;
+    &::-webkit-input-placeholder {
+      color: #B4B4B4;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      color: #B4B4B4;
+      opacity: 1;
+    }
+    &:-moz-placeholder {
+      color: #B4B4B4;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #B4B4B4;
+      opacity: 1;
+    }
+  }
+  &__submit {
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $color-orange;
+    color: $color-white;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0;
+    border-radius: 50%;
+  }
+  &__submit-icon {
+    position: relative;
+    right: -1px;
+    top: 1px;
+  }
+  &__description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      max-width: 400px;
+    }
+    @media screen and (min-width: 990px) {
+      margin: 0;
+      max-width: none;
+    }
+  }
+}

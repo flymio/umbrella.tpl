@@ -1,9 +1,8 @@
 .list-articles {
   &__cover {
-    padding-top: 40px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
     @media screen and (min-width: 990px) {
-      padding-top: 60px;
+      padding-bottom: 27px;
     }
   }
   &__content {

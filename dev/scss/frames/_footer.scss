@@ -1,5 +1,8 @@
 .footer {
   background: $color-brown;
+  .wrapper_light-theme & {
+    background: #D3D3D3;
+  }
   &__cover {
     padding-top: 50px;
     padding-bottom: 90px;
@@ -75,6 +78,9 @@
   &__contact-link {
     color: #6C6C6C;
     cursor: text;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
     &:hover,
     &:active {
       text-decoration: none;
@@ -88,6 +94,9 @@
     letter-spacing: 0;
     color: #6C6C6C;
     margin: 0 0 17px;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
   }
   &__navs {
     display: flex;
@@ -130,14 +139,23 @@
     color: #6C6C6C;
     letter-spacing: 0;
     min-height: 30px;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
   }
   &__nav-name-link {
     display: block;
     color: #6C6C6C;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
     &:hover,
     &:active {
       color: #D3D3D3;
       text-decoration: none;
+      .wrapper_light-theme & {
+        color: #6C6C6C;
+      }
     }
   }
   &__nav-list {
@@ -157,10 +175,16 @@
   &__nav-link {
     color: #6C6C6C;
     display: block;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
     &:hover,
     &:active {
       color: #D3D3D3;
       text-decoration: none;
+      .wrapper_light-theme & {
+        color: #6C6C6C;
+      }
     }
   }
   &__sub-navs {
@@ -207,10 +231,16 @@
   &__socials-icon {
     @include transition;
     fill: #6B6C6C;
+    .wrapper_light-theme & {
+      fill: #313131;
+    }
   }
   &__socials-link:hover &__socials-icon,
   &__socials-link:active &__socials-icon {
     fill: #D3D3D3;
+    .wrapper_light-theme & {
+      fill: $color-white;
+    }
   }
   &__sub-block {
     @media screen and (min-width: 990px) {
@@ -252,6 +282,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    .wrapper_light-theme & {
+      color: $color-white;
+    }
     @media screen and (min-width: 990px) {
       margin-bottom: 17px;
       position: relative;

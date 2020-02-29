@@ -22,11 +22,17 @@
     color: $color-brown;
     font-weight: $extrabold;
     letter-spacing: 0.7px;
+    .wrapper_light-theme & {
+      color: $color-white;
+    }
     &:hover,
     &:active,
     .active > & {
       color: #979797;
       text-decoration: none;
+      .wrapper_light-theme & {
+        color: #D3D3D3;
+      }
     }
   }
 }

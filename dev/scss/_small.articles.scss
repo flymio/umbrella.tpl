@@ -1,0 +1,132 @@
+.small-articles {
+  margin-bottom: 70px;
+  &__heading {
+    display: flex;
+    position: relative;
+    margin-right: -30px;
+    align-items: center;
+    padding-bottom: 13px;
+  }
+  &__title {
+    padding-right: 30px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: #979797;
+    text-transform: uppercase;
+    font-weight: $extrabold;
+  }
+  &__button-reload {
+    display: block;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-light-blue;
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__item-link {
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &__item-border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 91px;
+    @media screen and (min-width: 1200px) {
+      padding-left: 115px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #979797;
+    }
+  }
+  &__img-block {
+    flex: 0 0 auto;
+    width: 71px;
+    margin-right: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 44px;
+    }
+  }
+  &__img {
+    max-width: none;
+    width: 71px;
+  }
+  &__content {
+    flex: 1 1 auto;
+    position: relative;
+    margin-top: -5px;
+  }
+  &__name{
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: $extrabold;
+    margin: 0;
+    color: $color-dark;
+    @include transition;
+    min-height: 60px;
+  }
+  &__item-link:hover &__name,
+  &__item-link:active &__name {
+    color: $color-light-blue;
+  }
+  &__sub-info {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: -20px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  &__date,
+  &__views {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    padding-left: 20px;
+    color: $color-dark;
+    @include transition;
+    position: relative;
+  }
+  &__item-link:hover &__date,
+  &__item-link:active &__date,
+  &__item-link:hover &__views,
+  &__item-link:active &__views {
+    color: $color-light-blue;
+  }
+  &__date-icon,
+  &__views-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    color: $color-dark;
+    @include transition;
+  }
+  &__item-link:hover &__date-icon,
+  &__item-link:active &__date-icon,
+  &__item-link:hover &__views-icon,
+  &__item-link:active &__views-icon {
+    color: $color-light-blue;
+  }
+}

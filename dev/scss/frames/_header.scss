@@ -1,6 +1,9 @@
 .header {
   background: $color-brown;
   position: relative;
+  .wrapper_light-theme & {
+    background: #D3D3D3;
+  }
   &__content {
     height: 64px;
     display: flex;
@@ -74,6 +77,9 @@
     white-space: nowrap;
     position: relative;
     letter-spacing: 0.7px;
+    .wrapper_light-theme & {
+      color: #313131;
+    }
     &:hover,
     &:active {
       text-decoration: none;
@@ -140,6 +146,9 @@
       position: absolute;
       left: 0;
       border-radius: 5px;
+      .wrapper_light-theme & {
+        background: #313131;
+      }
       &:nth-child(1) {
         top: 0;
       }

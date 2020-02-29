@@ -9,6 +9,8 @@
 @import './form';
 @import './article';
 @import './pagination';
+@import './small.articles';
+@import './mailing';
 
 @import './frames/wrapper';
 @import './frames/header';
@@ -45,3 +47,6 @@
 @import './frames/services.price';
 @import './frames/blog.banner';
 @import './frames/list.articles';
+@import './frames/detail.banner';
+@import './frames/detail.content';
+@import './frames/call.button';

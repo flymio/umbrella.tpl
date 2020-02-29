@@ -1,4 +1,8 @@
 .blog-banner {
+  padding-bottom: 40px;
+  @media screen and (min-width: 990px) {
+    padding-bottom: 55px;
+  }
   &__content {
     padding: 88px 0 0 0;
     @media screen and (min-width: 990px) {
