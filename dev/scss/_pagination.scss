@@ -1,0 +1,63 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  @media screen and (min-width: 990px) {
+    padding-top: 0;
+  }
+  &__content {
+    position: relative;
+    padding: 0 58px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -6px;
+    justify-content: center;
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding: 0 6px 12px;
+  }
+  &__button {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #747474;
+    background: $color-white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+    letter-spacing: 0;
+    color: #747474;
+    &:hover,
+    &:active,
+    &_disabled {
+      color: $color-white;
+      background: #747474;
+      text-decoration: none;
+    }
+    &_empty {
+      border-color: $color-white;
+      &:hover,
+      &:active {
+        color: #747474;
+        background: $color-white;
+      }
+    }
+    &_arrow-left,
+    &_arrow-right {
+      position: absolute;
+      top: 0;
+      border-color: $color-white;
+    }
+    &_arrow-left {
+      left: 0;
+    }
+    &_arrow-right {
+      right: 0;
+    }
+  }
+}

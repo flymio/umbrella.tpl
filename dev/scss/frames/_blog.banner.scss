@@ -1,0 +1,75 @@
+.blog-banner {
+  &__content {
+    padding: 88px 0 0 0;
+    @media screen and (min-width: 990px) {
+      padding: 105px 0 0 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-right: 292px;
+    }
+    @media screen and (min-width: 1360px) {
+      padding-right: 300px;
+    }
+  }
+  &__section-heading {
+    margin-bottom: 55px;
+  }
+  &__variables {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -15px;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+  &__variable {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    @media screen and (min-width: 600px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 768px) {
+      width: (100% / 3);
+    }
+  }
+  &__variable-icon-block {
+    height: 31px;
+    position: relative;
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 37px;
+    }
+  }
+  &__variable-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 33px;
+    max-height: 31px;
+  }
+  &__variable-text {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  &__article {
+    position: relative;
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+  &__img {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: -338px;
+    max-width: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+}
